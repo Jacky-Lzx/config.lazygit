@@ -219,12 +219,12 @@ git:
     # 'topo-order' makes it easier to read the git log graph, but commits may not
     # appear chronologically. See https://git-scm.com/docs/
     #
-    # Deprecated: Configure this with `Log menu -> Commit sort order` (<c-l> in the commits window by default).
+    # Deprecated: Configure this with `Log menu -> Commit sort order` (<ctrl+l> in the commits window by default).
     order: topo-order
     # This determines whether the git graph is rendered in the commits panel
     # One of 'always' | 'never' | 'when-maximised'
     #
-    # Deprecated: Configure this with `Log menu -> Show git graph` (<c-l> in the commits window by default).
+    # Deprecated: Configure this with `Log menu -> Show git graph` (<ctrl+l> in the commits window by default).
     showGraph: always
     # displays the whole git graph by default in the commits view (equivalent to passing the `--all` argument to `git log`)
     showWholeGraph: false
@@ -299,7 +299,7 @@ promptToReturnFromSubprocess: true
 keybinding:
   universal:
     quit: q
-    quit-alt1: <c-c>
+    quit-alt1: <ctrl+c>
     return: <esc>
     quitWithoutChangingDirectory: Q
     togglePanel: <tab>
@@ -331,8 +331,7 @@ keybinding:
     nextMatch: "n"
     prevMatch: "N"
     startSearch: /
-    optionMenu: <disabled>
-    optionMenu-alt1: "?"
+    optionMenu: "?"
     select: <space>
     goInto: <enter>
     confirm: <enter>
@@ -345,8 +344,8 @@ keybinding:
     scrollDownMain: <pgdown>
     scrollUpMain-alt1: K
     scrollDownMain-alt1: J
-    scrollUpMain-alt2: <c-u>
-    scrollDownMain-alt2: <c-d>
+    scrollUpMain-alt2: <ctrl+u>
+    scrollDownMain-alt2: <ctrl+d>
     executeShellCommand: ":"
     createRebaseOptionsMenu: m
     # 'Files' appended for legacy reasons
@@ -354,26 +353,26 @@ keybinding:
     # 'Files' appended for legacy reasons
     pullFiles: p
     refresh: R
-    createPatchOptionsMenu: <c-p>
+    createPatchOptionsMenu: <ctrl+p>
     nextTab: "]"
     prevTab: "["
     nextScreenMode: +
     prevScreenMode: _
     undo: z
-    redo: <c-z>
-    filteringMenu: <c-s>
+    redo: <ctrl+z>
+    filteringMenu: <ctrl+s>
     diffingMenu: W
-    diffingMenu-alt: <c-e>
-    copyToClipboard: <c-o>
-    openRecentRepos: <c-r>
+    diffingMenu-alt: <ctrl+e>
+    copyToClipboard: <ctrl+o>
+    openRecentRepos: <ctrl+r>
     submitEditorText: <enter>
     extrasMenu: "@"
-    toggleWhitespaceInDiffView: <c-w>
+    toggleWhitespaceInDiffView: <ctrl+w>
     increaseContextInDiffView: "}"
     decreaseContextInDiffView: "{"
     increaseRenameSimilarityThreshold: )
     decreaseRenameSimilarityThreshold: (
-    openDiffTool: <c-t>
+    openDiffTool: <ctrl+t>
   status:
     checkForUpdate: u
     recentRepos: <enter>
@@ -383,7 +382,7 @@ keybinding:
     commitChangesWithoutHook: w
     amendLastCommit: A
     commitChangesWithEditor: C
-    findBaseCommitForFixup: <c-f>
+    findBaseCommitForFixup: <ctrl+f>
     confirmDiscard: x
     ignoreFile: i
     refreshFiles: r
@@ -394,14 +393,14 @@ keybinding:
     fetch: f
     toggleTreeView: "`"
     openMergeOptions: M
-    openStatusFilter: <c-b>
+    openStatusFilter: <ctrl+b>
     copyFileInfoToClipboard: "y"
     collapseAll: "-"
     expandAll: =
   branches:
     createPullRequest: o
     viewPullRequestOptions: O
-    copyPullRequestURL: <c-y>
+    copyPullRequestURL: <ctrl+y>
     checkoutBranchByName: c
     forceCheckoutBranch: F
     rebaseBranch: r
@@ -424,8 +423,8 @@ keybinding:
     markCommitAsFixup: f
     createFixupCommit: F
     squashAboveCommits: S
-    moveDownCommit: <c-j>
-    moveUpCommit: <c-k>
+    moveDownCommit: <ctrl+j>
+    moveUpCommit: <ctrl+k>
     amendToCommit: A
     resetCommitAuthor: a
     pickCommit: p
@@ -435,9 +434,9 @@ keybinding:
     markCommitAsBaseForRebase: B
     tagCommit: T
     checkoutCommit: <space>
-    resetCherryPick: <c-R>
+    resetCherryPick: <ctrl+r>
     copyCommitAttributeToClipboard: "y"
-    openLogMenu: <c-l>
+    openLogMenu: <ctrl+l>
     openInBrowser: o
     viewBisectOptions: b
     startInteractiveRebase: i
@@ -459,4 +458,4 @@ keybinding:
     update: u
     bulkMenu: b
   commitMessage:
-    commitMenu: <c-o>
+    commitMenu: <ctrl+o>
